@@ -1,9 +1,9 @@
 function preload()
 {
-
+mustache=loadImage("https://i.postimg.cc/QM4XyGcg/df.png")
 }
-LipsY=0
-LipsX=0
+NoseY=0
+NoseX=0
 function setup()
 {
     canvas=createCanvas(300,300);
@@ -17,6 +17,7 @@ function setup()
 function draw()
 {
     image(video,0,0,300,300);
+    image(clown_nose,noseX,noseY,30,30);
 }
 function gotPoses(results)
 {
